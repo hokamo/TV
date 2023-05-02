@@ -1,5 +1,5 @@
 var rule = {
-    title:'在线之家',
+    title:'在线189',
     host:'https://www.zx189.com',
     // homeUrl:'/',
     url:'/vodtype/fyclass-fypage.html',
