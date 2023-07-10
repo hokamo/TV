@@ -1,6 +1,6 @@
 var rule = {
-	    title:'gaze',
-	    host:'https://gaze.run',
+	    title:'jsapi',
+	    host:'https://www.baidu.com',
 	    url:'/filter_movielist?fyfilter',
 		detailUrl:'/play/fyid',
 	    // searchUrl:'/search?query=**&page=fypage',
@@ -20,30 +20,79 @@ var rule = {
 	    lazy:'',
 	    limit:6,
 	    double:false,
-	    推荐:'.swiper-slide;.card-title&&Text;img.mcoverimgs&&data-src;.badge-default&&Text;a&&href',
+	    推荐:'',
 		一级:'',
 		一级:`js:
 	log(input);
+	log('Object.keys(jsapi)=======>');
+	log(Object.keys(jsapi));
+	let t1 = jsapi.test;
+	log('typeof(jsapi.test)====>'+typeof(t1));
+	let t2 = jsapi.test1;
+	log('typeof(jsapi.test1)====>'+typeof(t2));
+	log('typeof(jsapi.test.add)===>'+typeof(jsapi.test.add));
+	log('typeof(jsapi.test1.add1)====>'+typeof(jsapi.test1.add1));
+	
+	log('typeof(jsapi.htmlParser)====>'+typeof(jsapi.htmlParser));
+	log('typeof(jsapi.htmlParser.pdfa)====>'+typeof(jsapi.htmlParser.pdfa));
+	log('typeof(jsapi.htmlParser.pdfh)====>'+typeof(jsapi.htmlParser.pdfh));
+	let html = '<a href="http://www.baidu.com">123<a>';
+	log('jsapi.htmlParser.pdfh("'+html+'","a&&Text")====>'+jsapi.htmlParser.pdfh(html,"a&&Text"));
+	
+	log('typeof(jsapi.add)====>'+typeof(jsapi.add));
+	log('typeof(jsapi.add1)====>'+typeof(jsapi.add1));
+	
+	log('jsapi.test.add(1,2)='+jsapi.test.add(1,2));
+	log('jsapi.test1.add1(1,2)='+jsapi.test1.add1(1,2));
+	
+	
+	//log('jsapi.test1.add(1,2)='+jsapi.test1.add(1,2));
+	//log('jsapi.add(1,2)='+jsapi.add(1,2));
+	//log('jsapi.add1(1,2)='+jsapi.add1(1,2));
+	
+	
 	let d=[];
-	let body={
-	mform:MY_CATE,
-	mcountry:MY_FL.mcountry||"all",
-	"tag_arr%5B%5D":MY_FL.mtag||"all",
-	page:MY_PAGE,
-	sort:MY_FL.sort||"updatetime",
-	album:MY_FL.album||"all",
-	title:"",
-	years: "all"
-	};
-	fetch_params.body=body;
-	fetch_params.headers["x-requested-with"]="XMLHttpRequest";
-	let url=input.split("?")[0];
-	let html=post(url,fetch_params);
-	print(html);
-	let data=JSON.parse(html);
-	data.mlist.forEach(function(it){d.push({title:it.title,desc:it.definition+" "+it.grade,url:it.mid,img:it.cover_img})});
+	for(let i=0;i<20;i++){
+	d.push({
+        title:'测试',
+        url:'index.html',
+        img:'https://gitee.com/CherishRx/imagewarehouse/raw/master/image/13096725fe56ce9cf643a0e4cd0c159c.gif',
+        desc:'jsapi',
+    });
+	}
+	
 	setResult(d);
 		`,
-	    二级:{"title":".playtitle&&Text;.badge&&Text","img":".pimgs&&src","desc":"h5:eq(1)&&Text","content":"h6&&Text","tabs":"","lists":"js:LISTS=[['第1集$1.mp4','第2集$1.mp4']]"},
-	    // 搜索:'*',
+	二级:`js:
+	let api=getProxyUrl()+'&url=';
+	VOD={
+       vod_id:'no_use',
+      vod_name:'测试二级',
+      type_name:input,
+      vod_pic:'https://gitee.com/CherishRx/imagewarehouse/raw/master/image/13096725fe56ce9cf643a0e4cd0c159c.gif',
+      vod_content:'这是一个原始js的测试案例',
+      vod_play_from:'代理线路1$$$不代理线路2',
+      vod_play_url:'选集播放1$'+api+'1.mp4#选集播放2$'+api+'2.mp4$$$选集播放3$3.mp4#选集播放4$4.mp4',
+    };
+	`,
+	proxy_rule:`
+	log(input);
+	function a(it){
+	if(it.startsWith('#')){
+	return it
+	}else{
+	return urljoin2(url,it)
+	}
+	}
+	let url = 'https://vip.lz-cdn3.com/20230706/20072_5c97b65e/index.m3u8';
+	let m3u8 = request(url);
+	log('m3u8处理前:'+m3u8);
+	m3u8 = m3u8.split('\\n').map(a).join('\\n');
+	log('m3u8处理后:============:'+m3u8);
+	url = m3u8.split('\\n').slice(-1)[0];
+	m3u8 = request(url);
+	
+	m3u8 = m3u8.split('\\n').map(a).join('\\n');
+	input = [200,'application/vnd.apple.mpegurl',m3u8]
+	`,
 }
