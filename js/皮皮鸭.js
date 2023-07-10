@@ -1,4 +1,6 @@
 // 地址发布页 https://www.ppydy.com
+// 一级筛选 数字验证
+
 muban.短视2.二级.tab_text = '.swiper-slide--i&&Text';
 var rule = {
 	title:'皮皮鸭',
@@ -9,9 +11,9 @@ var rule = {
 	homeUrl:'/label/rank.html',
 	class_name:'电影&国产剧&美剧&日韩剧&泰剧&其他剧&动漫&剧集',
 	class_url:'20&26&21&22&24&27&25&28',
-	// url: '/vodtype/fyclass/page/fypage.html',
+	url: '/vodtype/fyclass/page/fypage.html',
 	// url:'/vodshow/fyclassfyfilter.html',
-	url: '/api.php/provide/vod?ac=videolist&pg=fypage&t=fyclass',
+	// url: '/api.php/provide/vod?ac=videolist&pg=fypage&t=fyclass',
 	// filterable:1,//是否启用分类筛选,
 	// filter_url:'{{fl.cateId}}{{fl.area}}{{fl.by}}{{fl.class}}{{fl.lang}}{{fl.letter}}/page/fypage{{fl.year}}',
 	// filter:{
@@ -25,7 +27,8 @@ var rule = {
 	// },
 	timeout:5000,
 	detailUrl:'/voddetail/fyid.html',
+	pagecount:{"20":1,"26":1,"21":1,"22":1,"24":1,"27":1,"25":1},
 	推荐:'.vod-rank-vod;a&&title;.lazy&&data-original;.vod-rank-state&&Text;a&&href',
-	// 一级:'.public-list-box;a&&title;.lazy&&data-original;.hide&&Text;a&&href',
-	一级:'json:list;vod_name;vod_pic;vod_remarks;vod_id',
+	一级:'.public-list-box;a&&title;.lazy&&data-original;.hide&&Text;a&&href',
+	// 一级:'json:list;vod_name;vod_pic;vod_remarks;vod_id',
 }
