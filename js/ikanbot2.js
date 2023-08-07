@@ -3,8 +3,9 @@ try {
     VOD={};
 	let html1 = request(input);
 	pdfh = jsp.pdfh;
-	VOD.vod_id = pdfh(html1, "#current_id&&value");
-	VOD.vod_name = pdfh(html1, "h2&&Text");
+	//VOD.vod_id = pdfh(html1, "#current_id&&value");
+	VOD.vod_id = input;
+VOD.vod_name = pdfh(html1, "h2&&Text");
 	// VOD.vod_pic = pdfh(html1, ".item-root&&img&&src");
 	VOD.vod_pic = pdfh(html1, ".item-root&&img&&data-src");
 	// VOD.vod_actor = pdfh(html1, ".celebrity&&Text");
@@ -89,7 +90,7 @@ var rule = {
     let data = {'tv': [{'key': 'tag', 'name': '标签', 'value': value}]};
     console.log(JSON.stringify(data));
     `,
-    headers:{'User-Agent':'MOBILE_UA',},
+    headers:{'User-Agent':'PC_UA',},
     class_name:'电影&剧集',
     class_url:'movie&tv',
 	play_parse:true,
