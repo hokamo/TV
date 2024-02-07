@@ -26,7 +26,7 @@
 "aliproxy_url":"",
 "proxy":"",
 "danmu":true,
-"quark_danmu":true,
+"quark_danmu":false,
 "quark_cookie":"",
 "uc_cookie":"",
 "thunder_username":"",
