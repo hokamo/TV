@@ -1,5 +1,5 @@
 {
-"token":"",
+"token":"8b18665730c54ab49224e28ac1544435",
 "open_token":"",
 "open_api_url":"get|https://adrive.xdow.net/oauth/access_token",
 "oauth_client_id":"",
@@ -7,7 +7,7 @@
 "oauth_auth_url":"",
 "oauth_refresh_url":"",
 "thread_limit":32,
-"is_vip":false,
+"is_vip":true,
 "vip_thread_limit":0,
 "vod_flags":"4k|4kz|auto",
 "quark_thread_limit":32,
