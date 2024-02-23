@@ -2,7 +2,7 @@
 "use_internal_storage":false,
 "token":"2904621f97944daebb5ff1e6dcd01304",
 "open_token":"",
-"open_api_url":"get|https://adrive.xdow.net/oauth/access_token",
+"open_api_url":"https://adrive.xdow.net/oauth/access_token",
 "oauth_client_id":"",
 "oauth_client_secret":"",
 "oauth_auth_url":"",
