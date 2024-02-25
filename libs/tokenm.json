@@ -1,8 +1,8 @@
 {
 "use_internal_storage":false,
-"token":"154ab12f507541f4aa50768689d1f3cf",
-"open_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJmY2YwYjgwNjM5ZjU0MmM1ODlhM2ZmZDYxNjcwMDJkNCIsImF1ZCI6IjczZTYxMTgzMWE3YzRkODdhYzQ5Yzg0ODFiZjlmMmM0IiwiZXhwIjoxNzE2NTQ2NTI5LCJpYXQiOjE3MDg3NzA1MjksImp0aSI6ImE3YjE5YzJkMmQ0NTRmM2I4MTc5Y2ZjODdjYzNiNzc0In0.nyBPj6BdcbTVnJ6K6IZlqH9zhMG51HSGWkVBBxsqN4nGGcfQ6zufgqg8w9A71Eb4CFbHkbqnMBY4jsL3r8ak8A",
-"open_api_url":"https://api-cf.nn.ci/alist/ali_open/token",
+"token":"",
+"open_token":"",
+"open_api_url":"https://api.xhofe.top/alist/ali_open/token",
 "oauth_client_id":"",
 "oauth_client_secret":"",
 "oauth_auth_url":"",
