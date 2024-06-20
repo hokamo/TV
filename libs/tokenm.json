@@ -1,6 +1,5 @@
 {
-"use_internal_storage":false,
-"token":"60a8af9f5a9e44228dc4a42cd48442e6",
+"token":"8eb6966d1dc54a27a05b4a49c2ff675a",
 "open_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJmY2YwYjgwNjM5ZjU0MmM1ODlhM2ZmZDYxNjcwMDJkNCIsImF1ZCI6Ijc2OTE3Y2NjY2Q0NDQxYzM5NDU3YTA0ZjYwODRmYjJmIiwiZXhwIjoxNzE5ODMyMjQ2LCJpYXQiOjE3MTIwNTYyNDYsImp0aSI6IjgwNjVlNmVmMjQ4YjQ4NTRiNzg2YjMxNTdiMDJjZWEwIn0.eKLctwsKFg848WW4swld9GcE_9kTXHhESXnQYsIInXSr-AjZSV7uG60bXYIqmx4CfyHzFTN6z7nEn0kukvZS7w",
 "open_api_url":"get|https://adrive.xdow.net/oauth/access_token",
 "oauth_client_id":"",
@@ -24,7 +23,7 @@
 "thunder_vip_thread_limit":2,
 "thunder_flags":"4k|4kz|auto",
 "aliproxy":"",
-"aliproxy_url":"https://hokamo.github.io/TV/libs/aliproxy.gz;d68c23c1f2d7f95f79e337532e1513a1",
+"aliproxy_url":"https://hokamo.github.io/TV/libs/aliproxy.gz;06c8e8853070dce1a25519138665aa6c",
 "proxy":"",
 "danmu":false,
 "quark_danmu":false,
@@ -36,7 +35,7 @@
 "yd_auth":"",
 "yd_thread_limit":4,
 "yd_flags":"auto|4kz",
-"yd_danmu":false,
+"yd_danmu":true,
 "pikpak_username":"tonia08@protonmail.com",
 "pikpak_password":"Wtf_2024",
 "pikpak_flags":"4k|auto",
@@ -44,7 +43,7 @@
 "pikpak_vip_thread_limit":2,
 "pikpak_proxy":"",
 "pikpak_proxy_onlyapi":false,
-"pikpak_danmu":false,
+"pikpak_danmu":true,
 "wgcf_key":"",
 "wgcf_key2":"",
 "wgcf_ipport":"",
@@ -58,5 +57,6 @@
 "wgcf_vless_protocol":"vless",
 "wgcf_vless_network":"ws",
 "wgcf_vless_tls":false,
-"libxl_url":"./libxl_thunder_sdk.so"
+"libxl_url":"./libxl_thunder_sdk.so",
+"youtube_proxy":""
 }
