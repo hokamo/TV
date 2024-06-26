@@ -23,7 +23,7 @@
 "thunder_vip_thread_limit":2,
 "thunder_flags":"4k|4kz|auto",
 "aliproxy":"",
-"aliproxy_url":"https://hokamo.github.io/TV/libs/aliproxy.gz;06c8e8853070dce1a25519138665aa6c",
+"aliproxy_url":"https://hokamo.github.io/TV/libs/aliproxy.gz;44435fe173e06dc82c26a00ecf1e3bef",
 "proxy":"",
 "danmu":false,
 "quark_danmu":false,
@@ -35,7 +35,7 @@
 "yd_auth":"",
 "yd_thread_limit":4,
 "yd_flags":"auto|4kz",
-"yd_danmu":true,
+"yd_danmu":false,
 "pikpak_username":"tonia08@protonmail.com",
 "pikpak_password":"Wtf_2024",
 "pikpak_flags":"4k|auto",
@@ -43,7 +43,7 @@
 "pikpak_vip_thread_limit":2,
 "pikpak_proxy":"",
 "pikpak_proxy_onlyapi":false,
-"pikpak_danmu":true,
+"pikpak_danmu":false,
 "wgcf_key":"",
 "wgcf_key2":"",
 "wgcf_ipport":"",
@@ -58,5 +58,9 @@
 "wgcf_vless_network":"ws",
 "wgcf_vless_tls":false,
 "libxl_url":"./libxl_thunder_sdk.so",
-"youtube_proxy":""
+"youtube_proxy":"proxy",
+"singbox_url":"./sing-box.gz",
+"singbox_subscribe_url":"",
+"singbox_clash2singbox_url":"./clash2singbox.gz",
+"singbox_template_url":"./singbox.json"
 }
