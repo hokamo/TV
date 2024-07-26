@@ -1,7 +1,7 @@
 {
 "token":"8eb6966d1dc54a27a05b4a49c2ff675a",
 "open_token":"",
-"open_api_url":"get|https://adrive.xdow.net/oauth/access_token",
+"open_api_url":"postparam|http://api.extscreen.com/aliyundrive/token",
 "oauth_client_id":"",
 "oauth_client_secret":"",
 "oauth_auth_url":"",
@@ -23,7 +23,7 @@
 "thunder_vip_thread_limit":2,
 "thunder_flags":"4k|4kz|auto",
 "aliproxy":"",
-"aliproxy_url":"https://hokamo.github.io/TV/libs/aliproxy.gz;fa31432ba6983638010653bcd41fef07",
+"aliproxy_url":"https://hokamo.github.io/TV/libs/aliproxy.gz;d0307eab86e6f12d101b928f8e141f56",
 "proxy":"",
 "danmu":true,
 "quark_danmu":true,
@@ -62,5 +62,12 @@
 "singbox_url":"./sing-box.gz",
 "singbox_subscribe_url":"",
 "singbox_clash2singbox_url":"./clash2singbox.gz",
-"singbox_template_url":"./singbox.json"
+"singbox_template_url":"./singbox.json",
+"pan115_cookie":"",
+"pan115_thread_limit":0,
+"pan115_vip_thread_limit":0,
+"pan115_is_vip":false,
+"pan115_flags":"4kz",
+"pan115_auto_delete":true,
+"pan115_delete_code":""
 }
